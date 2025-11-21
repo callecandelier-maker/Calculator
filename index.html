@@ -27,16 +27,36 @@
 <div id="Calculator">
 
   <!-- Vi behöver en input för vår display som ska vara read only-->
-  <input id="">
+  <input id="display" readonly>
 
   <!-- Vi skapar en nested container för alla knapparna denna kallar vi "keys"-->
+  <div id="keys">
+    <!-- i knappen sätter vi in atributet onclick"", där vi  markerar en funktion med
+    en parameter för att kunna mata in ett arguemnt - vad som ska hända när vi trycker
+    på knappen. Funktionaliteten skapar vi sedan i Javascript -->
+    <button onclick="appendToDisplay('+')">+</button>
+    <button onclick="appendToDisplay('7')">7</button>
+    <button onclick="appendToDisplay('8')">8</button>
+    <button onclick="appendToDisplay('9')">9</button>
+    <button onclick="appendToDisplay('-')">-</button>
+    <button onclick="appendToDisplay('4')">4</button>
+    <button onclick="appendToDisplay('5')">5</button>
+    <button onclick="appendToDisplay('6')">6</button>
+    <button onclick="appendToDisplay('*')">*</button>
+    <button onclick="appendToDisplay('1')">1</button>
+    <button onclick="appendToDisplay('2')">2</button>
+    <button onclick="appendToDisplay('3')">3</button>
+    <button onclick="appendToDisplay('/')">/</button>
+    <button onclick="appendToDisplay('0')">0</button>
+    <button onclick="appendToDisplay('.')">.</button>
 
-
+    <!-- funktion för att räkna ihop siffrorna som matas in-->
+    <button onclick="Calculate()">=</button>
+    <!-- funktion för att clear:a displayen-->
+    <button onclick="CLearDisplay()">C</button>
+  </div>
 </div>
 
-
   <script src="js/app.js"></script>
-
 </body>
-  <h1 class="header"> Hej, hej hej....</h1>
 </html>
