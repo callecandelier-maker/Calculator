@@ -52,3 +52,9 @@ button:hover{
 button:active{
   background-color: hsl(0, 0%, 50%);
 }
+.orange{
+  background-color:orange;
+}
+.orange:hover{
+  background-color: #ffb733; /* darkorange */
+}
